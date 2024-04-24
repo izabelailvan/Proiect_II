@@ -1,0 +1,40 @@
+﻿@model List<Adopta_O_Emotie_Virtuala.Models.DomainModels.Animal>
+
+@{
+}
+
+<h1>Animals</h1>
+
+<table class="table">
+   <thead>
+       <tr>
+           <th>Id</th>
+           <th>Name</th>
+           <th>Species</th>
+            <th>Race</th>
+            <th>Size</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Description</th>
+            <th>Disponibility</th>
+            <th></th>
+       </tr>
+   </thead>
+   <tbody>
+        @foreach(var animal in Model)
+        {
+            <tr>
+                <td>@animal.ID_Animal</td>
+                <td>@animal.Name</td>
+                <td>@animal.Species</td>
+                <td>@animal.Race</td>
+                <td>@animal.Size</td>
+                <td>@animal.Sex</td>
+                <td>@animal.Age</td>
+                <td>@animal.Description</td>
+                <td>@animal.Disponibiity</td>
+                <td><a href="Animals/View/@animal.ID_Animal">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

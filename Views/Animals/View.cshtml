@@ -1,0 +1,60 @@
+﻿@model Adopta_O_Emotie_Virtuala.Models.UpdateAnimalViewModel
+@{
+}
+
+<h1>Edit Animal's details'</h1>
+<form method="post" action="View">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="ID_Animal" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Species</label>
+        <input type="text" class="form-control" asp-for="Species">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Race</label>
+        <input type="text" class="form-control" asp-for="Race">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Age</label>
+        <input type="number" class="form-control" asp-for="Age">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Size</label>
+        <select class="form-select" aria-label="Default select example" asp-for="Size">
+            <option selected>Select size</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Gender</label>
+        <select class="form-select" aria-label="Default select example" asp-for="Sex">
+            <option selected>Select gender</option>
+            <option value="F">F</option>
+            <option value="M">M</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Disponibility</label>
+        <select class="form-select" aria-label="Default select example" asp-for="Disponibiity">
+            <option selected>Select disponibility</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-danger" asp-action="Delete"
+    asp-controller="Animals"
+    >Delete</button>
+</form>

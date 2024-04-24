@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Adopta_O_Emotie_Virtuala.props" />
+</Project>
