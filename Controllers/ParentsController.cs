@@ -42,5 +42,58 @@ namespace Adopta_O_Emotie_Virtuala.Controllers
             await mVCDbContext.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> View(Guid id)
+        {
+            var parent = await mVCDbContext.Foster_Parents.FirstOrDefaultAsync(x => x.ID_Parent == id);
+
+            if (parent != null)
+            {
+                var viewModel = new UpdateParentsViewModel()
+                {
+                    ID_Parent = parent.ID_Parent,
+                    ID_User = parent.ID_User,
+                    ExperienceWithAnimals = parent.ExperienceWithAnimals,
+                    Prefrences = parent.Prefrences
+                };
+                return await Task.Run(() => View("View", viewModel));
+            }
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> View(UpdateParentsViewModel model)
+        {
+            var parent = await mVCDbContext.Foster_Parents.FindAsync(model.ID_Parent);
+            if (parent != null)
+            {
+                parent.ID_Parent = model.ID_Parent;
+                parent.ID_User = model.ID_User;
+                parent.ExperienceWithAnimals = model.ExperienceWithAnimals;
+                parent.Prefrences = model.Prefrences;
+
+
+                await mVCDbContext.SaveChangesAsync();
+
+                return RedirectToAction("Index");
+            }
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(UpdateParentsViewModel model)
+        {
+            var parent = await mVCDbContext.Foster_Parents.FindAsync(model.ID_Parent);
+            if (parent != null)
+            {
+                mVCDbContext.Foster_Parents.Remove(parent);
+                await mVCDbContext.SaveChangesAsync();
+
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

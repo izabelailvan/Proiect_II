@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvcHRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Adoption/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvcHRpb25cVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Animals/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Parents/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Users/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/_ViewImports.cshtml]
