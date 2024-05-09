@@ -1,0 +1,26 @@
+﻿@model List< Adopta_O_Emotie_Virtuala.Models.DomainModels.Foster_parents>
+@{
+}
+<h1>Foster Parents Info</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID_Parent</th>
+            <th>ID_User</th>
+            <th>ExperienceWithAnimals</th>
+            <th>Prefrences</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var parent in Model)
+        {
+            <tr>
+                <td>@parent.ID_Parent</td>
+                <td>@parent.ID_User</td>
+                <td>@parent.ExperienceWithAnimals</td>
+                <td>@parent.Prefrences</td>
+            </tr>
+        }
+    </tbody>
+</table>

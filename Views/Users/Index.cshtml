@@ -1,0 +1,33 @@
+﻿@model List<Adopta_O_Emotie_Virtuala.Models.DomainModels.User>
+@{
+}
+
+<h1>Users</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Date of birth</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            <tr>
+            <td>@user.Id</td>
+            <td>@user.Name</td>
+            <td>@user.Email</td>
+            <td>@user.Phone</td>
+            <td>@user.Address</td>
+            <td>@user.DateOfBirth.ToString("dd-MM-yyyy")</td>
+            <td>@user.Password</td>
+            </tr>
+        }
+    </tbody>
+</table>

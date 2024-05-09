@@ -12,5 +12,7 @@ namespace Adopta_O_Emotie_Virtuala.Data
         public DbSet<Animal> Animals { get; set; }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Foster_parents> Foster_Parents { get; set; }
+        public DbSet<Adoption> Adoptions { get; set; }
     }
 }

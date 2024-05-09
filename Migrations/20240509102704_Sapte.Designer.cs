@@ -4,6 +4,7 @@ using Adopta_O_Emotie_Virtuala.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Adopta_O_Emotie_Virtuala.Migrations
 {
     [DbContext(typeof(MVCDbContext))]
-    partial class MVCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240509102704_Sapte")]
+    partial class Sapte
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,13 +33,11 @@ namespace Adopta_O_Emotie_Virtuala.Migrations
                     b.Property<DateTime>("DateOfAdoption")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ID_Animal")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("ID_Animal")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("ID_Parent")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("ID_Parent")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Status")
                         .IsRequired()
@@ -100,9 +100,8 @@ namespace Adopta_O_Emotie_Virtuala.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ID_User")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("ID_User")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Prefrences")
                         .IsRequired()
@@ -110,7 +109,7 @@ namespace Adopta_O_Emotie_Virtuala.Migrations
 
                     b.HasKey("ID_Parent");
 
-                    b.ToTable("Foster_parents");
+                    b.ToTable("Foster_Parents");
                 });
 
             modelBuilder.Entity("Adopta_O_Emotie_Virtuala.Models.DomainModels.User", b =>

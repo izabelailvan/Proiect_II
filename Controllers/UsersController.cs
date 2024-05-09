@@ -2,6 +2,7 @@
 using Adopta_O_Emotie_Virtuala.Models;
 using Adopta_O_Emotie_Virtuala.Models.DomainModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Adopta_O_Emotie_Virtuala.Controllers
 {
@@ -12,8 +13,12 @@ namespace Adopta_O_Emotie_Virtuala.Controllers
         this.mVCDbContext = mVCDbContext;
         }
 
-        //[HttpGet]
-        //public IActionResult Index
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+           var users = await mVCDbContext.Users.ToListAsync();
+            return View(users);
+        }
 
         [HttpGet]
         public IActionResult Add()
@@ -23,7 +28,7 @@ namespace Adopta_O_Emotie_Virtuala.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Add(AddUserViewModel addUserRequest)
-        {
+        { 
             var user = new User()
             {
                 Id = Guid.NewGuid(),
@@ -36,7 +41,7 @@ namespace Adopta_O_Emotie_Virtuala.Controllers
             };
             await mVCDbContext.Users.AddAsync(user);
             await mVCDbContext.SaveChangesAsync();
-            return RedirectToAction("Add");
+            return RedirectToAction("Index");
         }
 
     }

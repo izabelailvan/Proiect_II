@@ -1,0 +1,28 @@
+﻿@model List<Adopta_O_Emotie_Virtuala.Models.DomainModels.Adoption>
+@{
+}
+<h1>Adoption Info</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID_Adoption</th>
+            <th>ID_Animal</th>
+            <th>ID_Parent</th>
+            <th>Date of adoption</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var adoption in Model)
+        {
+            <tr>
+                <td>@adoption.ID_Adoption</td>
+                <td>@adoption.ID_Animal</td>
+                <td>@adoption.ID_Parent</td>
+                <td>@adoption.DateOfAdoption</td>
+                <td>@adoption.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

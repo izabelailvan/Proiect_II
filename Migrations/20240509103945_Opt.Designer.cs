@@ -4,6 +4,7 @@ using Adopta_O_Emotie_Virtuala.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Adopta_O_Emotie_Virtuala.Migrations
 {
     [DbContext(typeof(MVCDbContext))]
-    partial class MVCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240509103945_Opt")]
+    partial class Opt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -110,7 +112,7 @@ namespace Adopta_O_Emotie_Virtuala.Migrations
 
                     b.HasKey("ID_Parent");
 
-                    b.ToTable("Foster_parents");
+                    b.ToTable("Foster_Parents");
                 });
 
             modelBuilder.Entity("Adopta_O_Emotie_Virtuala.Models.DomainModels.User", b =>

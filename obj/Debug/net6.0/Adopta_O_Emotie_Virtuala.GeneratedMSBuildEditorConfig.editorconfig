@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\izabe\OneDrive\Documente\an3sem2\II\Proiect\Adopta_O_Emotie_Virtuala
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Adoption/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvcHRpb25cQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Adoption/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvcHRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Animals/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Parents/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Parents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Users/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/izabe/OneDrive/Documente/an3sem2/II/Proiect/Adopta_O_Emotie_Virtuala/Views/_ViewImports.cshtml]

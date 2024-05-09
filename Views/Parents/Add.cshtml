@@ -1,0 +1,21 @@
+﻿@model Adopta_O_Emotie_Virtuala.Models.AddParentViewModel
+@{
+}
+<h1>Add information about Foster parents</h1>
+
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="" class="form-label">ID_User </label>
+        <input type="text" class="form-control" asp-for="ID_User">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Experience With Animals</label>
+        <input type="text" class="form-control" asp-for="ExperienceWithAnimals">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Prefrences</label>
+        <input type="text" class="form-control" asp-for="Prefrences">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,27 @@
+﻿@model Adopta_O_Emotie_Virtuala.Models.AddAdoptionViewModel
+@{
+}
+
+<h1>Add information about Adoption</h1>
+
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="" class="form-label">ID Animal</label>
+        <input type="text" class="form-control" asp-for="ID_Animal">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">ID Parent</label>
+        <input type="text" class="form-control" asp-for="ID_Parent">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Date of adoption</label>
+        <input type="date" class="form-control" asp-for="DateOfAdoption">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Status</label>
+        <input type="text" class="form-control" asp-for="Status">
+    </div>
+
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

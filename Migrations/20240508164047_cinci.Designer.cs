@@ -4,6 +4,7 @@ using Adopta_O_Emotie_Virtuala.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Adopta_O_Emotie_Virtuala.Migrations
 {
     [DbContext(typeof(MVCDbContext))]
-    partial class MVCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240508164047_cinci")]
+    partial class cinci
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,17 +94,18 @@ namespace Adopta_O_Emotie_Virtuala.Migrations
 
             modelBuilder.Entity("Adopta_O_Emotie_Virtuala.Models.DomainModels.Foster_parents", b =>
                 {
-                    b.Property<Guid>("ID_Parent")
+                    b.Property<int>("ID_Parent")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_Parent"), 1L, 1);
 
                     b.Property<string>("ExperienceWithAnimals")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ID_User")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ID_User")
+                        .HasColumnType("int");
 
                     b.Property<string>("Prefrences")
                         .IsRequired()
@@ -110,7 +113,7 @@ namespace Adopta_O_Emotie_Virtuala.Migrations
 
                     b.HasKey("ID_Parent");
 
-                    b.ToTable("Foster_parents");
+                    b.ToTable("Foster_Parents");
                 });
 
             modelBuilder.Entity("Adopta_O_Emotie_Virtuala.Models.DomainModels.User", b =>
